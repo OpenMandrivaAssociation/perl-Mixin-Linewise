@@ -1,15 +1,15 @@
 %define upstream_name    Mixin-Linewise
-%define upstream_version 0.104
+%define upstream_version 0.108
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
-Summary:	Get linewise writeers for strings and filenames
+Summary:	Get linewise writers for strings and filenames
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Mixin/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Mixin-Linewise-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -17,6 +17,7 @@ BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(IO::File)
 BuildRequires:	perl(IO::String)
 BuildRequires:	perl(Sub::Exporter)
+BuildRequires:	perl(PerlIO::utf8_strict)
 
 BuildArch:	noarch
 
