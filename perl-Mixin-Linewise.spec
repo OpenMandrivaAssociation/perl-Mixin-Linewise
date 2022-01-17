@@ -1,9 +1,9 @@
 %define upstream_name    Mixin-Linewise
-%define upstream_version 0.108
+%define upstream_version 0.110
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Get linewise writers for strings and filenames
 License:	GPL+ or Artistic
