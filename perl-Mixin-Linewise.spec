@@ -18,6 +18,7 @@ BuildRequires:	perl(IO::File)
 BuildRequires:	perl(IO::String)
 BuildRequires:	perl(Sub::Exporter)
 BuildRequires:	perl(PerlIO::utf8_strict)
+BuildRequires:	perl(Test::More)
 
 BuildArch:	noarch
 
