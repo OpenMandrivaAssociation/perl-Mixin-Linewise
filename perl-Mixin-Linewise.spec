@@ -1,15 +1,14 @@
 %define upstream_name    Mixin-Linewise
-%define upstream_version 0.110
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
+Version:	0.111
 Release:	1
 
 Summary:	Get linewise writers for strings and filenames
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Mixin::Linewise
-Source0:	http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Mixin-Linewise-%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Mixin-Linewise-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -30,17 +29,17 @@ method to handle handles, and methods for handling strings and filenames
 are added for you.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{version}
+perl Makefile.PL INSTALLDIRS=vendor
 
 %build
-perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 %make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes LICENSE README
