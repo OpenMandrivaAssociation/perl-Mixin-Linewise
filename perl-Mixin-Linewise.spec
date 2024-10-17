@@ -7,7 +7,7 @@ Release:	1
 Summary:	Get linewise writers for strings and filenames
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Mixin::Linewise
+Url:		https://metacpan.org/pod/Mixin::Linewise
 Source0:	http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Mixin-Linewise-%{version}.tar.gz
 
 BuildRequires:	perl-devel
