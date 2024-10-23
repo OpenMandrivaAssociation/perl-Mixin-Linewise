@@ -2,7 +2,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	0.111
-Release:	1
+Release:	2
 
 Summary:	Get linewise writers for strings and filenames
 License:	GPL+ or Artistic
