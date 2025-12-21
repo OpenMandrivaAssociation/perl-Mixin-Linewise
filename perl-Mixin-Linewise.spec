@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/Mixin::Linewise
 Source0:	http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Mixin-Linewise-%{version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(ExtUtils::MakeMaker)
